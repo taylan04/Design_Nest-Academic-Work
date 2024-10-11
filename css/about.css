@@ -1,0 +1,111 @@
+body {
+    background-color: rgb(24, 24, 24);
+    height: 2000px;
+}
+
+@font-face {
+    font-family: sora;
+    src: url(Sora-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: mograch;
+    src: url(mograch.otf);
+}
+
+.menu #voltar {
+    color: beige;
+    position: fixed;
+    top: 48px;
+    left: 45px;
+}
+
+.menu i:hover {
+    color: rgb(166, 31, 31);
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.menu #git {
+    color: beige;
+    position: fixed;
+    top: 54px;
+    right: 60px;
+}
+
+.menu #linkedin {
+    color: beige;
+    position: fixed;
+    top: 54px;
+    right: 120px;
+}
+
+.menu img {
+    position: fixed;
+    margin: auto;
+    width: 40px;
+    display: block;
+    left: 50%;
+    top: 70px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px red;
+    transition: opacity 0.3s ease;
+    z-index: 100;
+}
+
+h1 {
+    font-family: sora;
+    color: beige;
+    font-size: 44px;
+    position: fixed;
+    top: -5px;
+    left: 115px;
+    transition: opacity 0.3s ease;
+}
+
+main {
+    margin-top: 300px;
+    margin-left: 150px;
+}
+
+#eu h2 {
+    font-family: mograch;
+    letter-spacing: 3px;
+    color: rgb(166, 31, 31);
+    font-size: 54px;
+    margin-bottom: 10px;
+}
+
+#eu h6 {
+    font-family: sora;
+    letter-spacing: 3px;
+    color: beige;
+    font-size: 10px;
+}
+
+#eu p {
+    font-family: sora;
+    letter-spacing: 3px;
+    color: beige;
+    font-size: 13px;
+    text-shadow: 0 0 2px beige;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+#projeto h2 {
+    font-family: mograch;
+    letter-spacing: 4px;
+    color: rgb(166, 31, 31);
+    font-size: 54px;
+}
+
+#projeto p {
+    font-family: sora;
+    letter-spacing: 3px;
+    color: beige;
+    font-size: 13px;
+    text-shadow: 0 0 2px beige;
+}

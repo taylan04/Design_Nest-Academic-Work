@@ -1,0 +1,78 @@
+body {
+    background-image: linear-gradient(to left, rgb(23, 23, 23), rgb(209, 0, 0));
+    font-family: sora;
+}
+
+@font-face {
+    font-family: sora;
+    src: url(Sora-VariableFont_wght.ttf);
+}
+
+.menu2 a {
+    color: beige;
+    position: fixed;
+    top: 30px;
+    left: 30px;
+}
+
+.menu2 a:hover {
+    transform: scale(1.3);
+    transition: 0.3s;
+}
+
+.menu2 i:hover {
+    color: rgb(25, 25, 25);
+}
+
+.logo {
+    display: flex;
+    margin: auto;
+    bottom: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgb(255, 255, 255);
+}
+
+.logo:hover {
+    box-shadow: 0 0 15px rgb(255, 63, 63);
+    transition: 0.3s;
+}
+
+#lista {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+    top: 200px;
+}
+
+input {
+    background-color: beige;
+    font-family: sora;
+    border: none;
+    width: 250px;
+    padding: 10px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+#logar {
+    background-color: rgb(255, 67, 67);
+}
+
+input:hover {
+    color: whitesmoke;
+    background-color: rgb(255, 138, 138);
+    box-shadow: 0 0 15px rgb(255, 0, 0);
+    transition: 0.3s;
+}
+
+#logar:hover {
+    font-weight: 600;
+    transform: scale(1.1);
+    transition: 0.3s;
+    background-color: rgb(255, 138, 138);
+    color: rgb(228, 228, 228);
+    box-shadow: 0 0 15px rgb(255, 113, 113);
+}

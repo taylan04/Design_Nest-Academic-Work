@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: Proxima Nova,-apple-system,Roboto,Arial,sans-serif;
+    background-color: whitesmoke;
+}
+
+#painel {
+    height: 70px;
+    background-image: linear-gradient(to left, rgb(231, 22, 22), rgb(124, 0, 0));
+    display: flex;
+}
+
+#painel img {
+    width: 60px;
+    position: relative;
+    margin: auto;
+}
+
+h1 {
+    color: whitesmoke;
+    position: relative;
+    left: 20px;
+}
+
+main h2 {
+    text-align: center;
+    font-size: 17px;
+    position: relative;
+    top: 80px;
+}
+
+.confirm {
+    top: 120px;
+    right: 55px;
+}
+
+.separator {
+    background-color: rgba(0, 0, 0, 0.199);
+    height: 1px;
+    margin: auto;
+    width: 300px;
+    position: relative;
+    top: 80px;
+}
+
+main .produto {
+    font-weight: 200;
+    position: relative;
+    right: 110px;
+}
+
+
+main .valor {
+    font-weight: 200;
+    position: relative;
+    right: 93px;
+}
+
+#senha {
+    position: relative;
+    top: 120px;
+    left: 620px;
+    padding: 10px;
+    border-radius: 40px;
+    border: 1px solid black;
+}
+
+#comprar {
+    position: relative;
+    top: 120px;
+    left: 620px;
+    background-image: linear-gradient(to right, rgb(231, 22, 22), rgb(124, 0, 0) );
+    padding: 14px;
+    border-radius: 40px;
+    border: 0px solid white;
+    color: whitesmoke;
+    font-size: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+#comprar:hover {
+    background-image: linear-gradient(to right, rgb(23, 23, 23), rgb(82, 82, 82));
+    box-shadow: 0 0 15px rgb(105, 101, 101);
+    transition: 0.3s;
+}

@@ -22,7 +22,7 @@ body {
 }
 
 .menu2 a:hover {
-    transform: scale(1.3);
+    transform: scale(1.1);
     transition: 0.3s;
 }
 
@@ -66,6 +66,19 @@ body {
 .logo:hover {
     box-shadow: 0 0 15px rgba(255, 63, 63, 0.807);
     transition: 0.3s;
+}
+
+.menu2 #cadastrar {
+     text-decoration: none;
+     position: fixed;
+     top: 78px;
+     left: 1180px;
+     font-weight: 600;
+     transition: 0.3s;
+}
+
+.menu2 #adquira2 {
+    top: 120px;
 }
 
 #lista {

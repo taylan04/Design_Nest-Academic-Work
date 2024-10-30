@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="../imagens/logo-red.ico" type="image/x-ico">
+    <title>Criar uma conta</title>
+    <link rel="stylesheet" href="../css/registrar.css">
+    <title></title>
+</head>
+<body>
+    <header>
+        <section class="menu2">
+          <a href="../index.html"><i class="fa-solid fa-house fa-2xl"></i></a>
+        </section>
+        </header>
+        <main>
+          <section id="chamadaCadastrar">
+            <img class="logo" src="../imagens/logo-preto.png" width="70px" alt="logo">
+            <h1>Agora vamos fazer de você um<br> membro da <strong>Nest.</strong></h1>
+          </section>
+          <section id="nomeSobrenome">
+            <input type="text" id="nome" value="Nome *" onfocus="limpar()" onblur="restaurar()">
+            <input type="text" id="sobrenome" value="Sobrenome *" onfocus="limpar2()" onblur="restaurar2()">
+          </section>
+          <section id="usuarioSenha">
+            <input type="email" id="email" value="Email *" onfocus="limpar5()" onblur="restaurar5()">
+            <input type="text" id="usuario" value="Usuário *" onfocus="limpar4()" onblur="restaurar4()">
+            <input type="password" id="senha" value="Crie uma senha *" onfocus="limpar3()" onblur="restaurar3()">
+            <p id="exigenciasSenha">X A senha deve ter pelo menos 8 caracteres.<br>
+                   X Deve conter pelo menos uma letra maiúscula (A-Z).<br>
+                   X Deve conter ao menos um caractere especial, como:<br> @, #, $, %, &, *, !, ?, etc.</p>
+          </section>      
+          <section id="registrar">
+          <input type="button" id="registrar2" value="Criar uma conta" onclick="registrando()">
+          </section>
+        </main>
+
+<script src="../js/registrar.js"></script>
+</body>
+</html>

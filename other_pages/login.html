@@ -18,10 +18,11 @@
         <main>
           <ul id="lista">
             <img class="logo" src="../imagens/logo-projeto-de-bloco.png" width="100px" alt="logo">
-            <li><input type="text" id="nome" value="Usuário" ></li>
-            <li><input type="text" id="email" value="Email" ></li>
-            <li><input type="text" id="password" value="Senha" ></li>
+            <li><input type="text" id="nome" value="Usuário" onfocus="limpar()" onblur="restaurar()"></li>
+            <li><input type="text" id="email" value="Email" onfocus="limpar2()" onblur="restaurar2()"></li>
+            <li><input type="text" id="senha" value="Senha" onfocus="limpar3()" onblur="restaurar3()"></li>
             <li><input type="button" id="logar" value="Login" onclick="logando()"></li>
+            <li><a href="../other_pages/registrar.html">Não possuo cadastro</a></li>
           </ul>
         </main>
 

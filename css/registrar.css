@@ -1,0 +1,127 @@
+body {
+    font-family: sora;
+}
+
+@font-face {
+    font-family: sora;
+    src: url(../fontes/Sora-VariableFont_wght.ttf);
+}
+
+.menu2 a {
+    color: rgb(37, 37, 37);
+    position: fixed;
+    top: 30px;
+    left: 30px;
+}
+
+.menu2 a:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.menu2 i:hover {
+    color: rgb(172, 11, 11);
+}
+
+.logo {
+    position: relative;
+    top: 20px;
+    display: flex;
+    margin: auto;
+}
+
+h1 {
+    font-weight: 300;
+    text-align: center;
+    position: relative;
+    top: 15px;
+}
+
+#nomeSobrenome {
+    text-align: center;
+    position: relative;
+    top: 30px;
+    word-spacing: 10px;
+}
+
+#nome {
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+    color: rgb(102, 102, 102);
+}
+
+#sobrenome {
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+    color: rgb(102, 102, 102);
+}
+
+#usuario {
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+    color: rgb(102, 102, 102);
+    text-align: center;
+    width: 380px;
+}
+
+
+#senha {
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+    color: rgb(102, 102, 102);
+    text-align: center;
+    width: 380px;
+}
+
+#email {
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+    color: rgb(102, 102, 102);
+    text-align: center;
+    width: 380px;
+}
+
+#usuarioSenha {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+    gap: 13px;
+}
+
+#exigenciasSenha {
+    font-size: 11px;
+    text-align: left;
+    position: relative;
+    right: 50px;
+}
+
+#registrar {
+    text-align: center;
+}
+
+#registrar2 {
+    position: relative;
+    top: 80px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: black;
+    color: beige;
+    font-weight: bold;
+    border: 0 solid black;
+    transition: 0.3s;
+}
+
+#registrar2:hover {
+    background-color: rgb(211, 20, 20);
+    box-shadow: 0 0 15px rgb(255, 115, 115);
+    transform: scale(1.05);
+
+}

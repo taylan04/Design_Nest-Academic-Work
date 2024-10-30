@@ -1,10 +1,10 @@
-const sumir = document.getElementById("adquira");
-const sumir2 = document.getElementById("adquira2");
-const sumir3 = document.getElementById("cadastrar")
+let sumir = document.getElementById("adquira");
+let sumir2 = document.getElementById("adquira2");
+let sumir3 = document.getElementById("cadastrar")
 
 window.addEventListener('scroll', function() {
     const efeito = window.scrollY;
-
+    
     if (efeito > 50) {
         sumir.classList.add('hidden');
     } else {
@@ -24,10 +24,23 @@ window.addEventListener('scroll', function() {
 
 window.addEventListener('scroll', function() {
     const efeito3 = window.scrollY;
-
+    
     if (efeito3 > 50) {
         sumir3.classList.add('hidden');
-} else {
+    } else {
         sumir3.classList.remove('hidden') 
     }
 });
+
+const cadastrarProduto = document.getElementById("cadastrar")
+const logado = localStorage.getItem("logado") === "true"
+const admin = localStorage.getItem("user") === "admin"
+
+if(logado && admin) {
+    cadastrarProduto.style.display = "block"
+} else {
+    cadastrarProduto.style.display = "none"
+}
+
+
+

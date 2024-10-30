@@ -3,53 +3,96 @@ let sobrenomeDoUsuario = document.getElementById("sobrenome")
 let usuario = document.getElementById("usuario")
 let senhaDoUsuario = document.getElementById("senha")
 let email = document.getElementById("email")
+let mensagem = document.getElementById("mensagem")
+let logo = document.querySelector(".logo")
 
-function limpar() {
-    nomeDoUsuario.value = ""
+function limpar(campo) {
+    campo.value = ""
 }
 
-function restaurar() {
-    if (nomeDoUsuario.value === "") {
-        nomeDoUsuario.value = "Nome *"
+function restaurar(campo, padrao) {
+    if (campo.value === "") {
+        campo.value = padrao
     }
 }
 
-function limpar2() {
-    sobrenomeDoUsuario.value = ""
+function animacao(campo) {
+    campo.classList.remove("tremer")
+
+    void campo.offsetWidth;
+    campo.classList.add("tremer");
 }
 
-function restaurar2() {
-    if (sobrenomeDoUsuario.value === "") {
-        sobrenomeDoUsuario.value = "Sobrenome *"
-    }
+function girarLogo() {
+    logo.classList.remove("rotacionar"); 
+    void logo.offsetWidth; 
+    logo.classList.add("rotacionar");
 }
 
-function limpar3() {
-    senhaDoUsuario.value = ""
-}
+function registrando() {
 
-function restaurar3() {
-    if ( senhaDoUsuario.value === "") {
-        senhaDoUsuario.value = "Crie uma senha *"
-    }
-}
+    let validador = true
 
-function limpar4() {
-    usuario.value = ""
-}
+     function bordaVermelha(campo){
+        campo.style.border = "1px solid red"
+     }
 
-function restaurar4() {
-    if (usuario.value === "") {
-        usuario.value = "Usuário *"
-    }
-}
+    if(nomeDoUsuario.value === "Nome *" || nomeDoUsuario.value === "") {
+        validador = false
+        bordaVermelha(nomeDoUsuario)
+        animacao(nomeDoUsuario)
+    
+   } 
 
-function limpar5() {
-    email.value = ""
-}
+   if (sobrenomeDoUsuario.value === "Sobrenome *" || sobrenomeDoUsuario.value === "") {
+    validador = false
+    bordaVermelha(sobrenomeDoUsuario)
+    animacao(sobrenomeDoUsuario)
+   } 
 
-function restaurar5() {
-    if(email.value === "") {
-        email.value = "Email *"
-    }
+   if (email.value === "Email *" || email.value === "") {
+    validador = false
+    bordaVermelha(email)
+    animacao(email)
+   }
+
+   if (usuario.value === "Usuário *" || usuario.value === "") {
+    validador = false
+    usuario.style.border = "1px solid red"
+    animacao(usuario)
+   }
+ 
+   if (senhaDoUsuario.value === "Crie uma senha *" || senhaDoUsuario.value === "") {
+    validador = false
+    bordaVermelha(senhaDoUsuario)
+    animacao(senhaDoUsuario)
+   }
+
+   if(email.value.includes("@")) {
+    console.log("ok")
+   } else {
+    validador = false
+    bordaVermelha(email)
+    animacao(email)
+   }
+
+   if (senhaDoUsuario.value.length < 8 || !/[A-Z]/.test(senhaDoUsuario.value) ||  !/[@\$\^\&\*\(\)\+\=\[\]\"\|\/\?]/.test(senhaDoUsuario.value)) {
+    validador = false
+    bordaVermelha(senhaDoUsuario)
+    animacao(senhaDoUsuario)
+   }
+
+   if (validador) {
+    localStorage.setItem("nomeDoUsuario", nome.value);
+    localStorage.setItem("sobrenomeDoUsuario", sobrenomeDoUsuario.value)
+    localStorage.setItem("usuario", usuario.value)
+    localStorage.setItem("email", email.value);
+    localStorage.setItem("senha", senha.value);
+    girarLogo()
+    console.log("ok")
+    window.location.href = "../other_pages/login.html"
+   } else {
+    girarLogo()
+       mensagem.innerText = "Preencha todos os dados corretamente!"
+   }
 }

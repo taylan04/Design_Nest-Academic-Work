@@ -7,6 +7,23 @@ body {
     src: url(../fontes/Sora-VariableFont_wght.ttf);
 }
 
+@keyframes tremer {
+    
+   
+    0%, 100% { transform: translateX(0); }
+        
+       
+    25% { transform: translateX(-5px); }
+        
+       
+    50% { transform: translateX(5px); }
+        75% { transform: translateX(-5px); }
+    }
+
+.tremer {
+        animation: tremer 0.3s ease-in-out;
+}
+
 .menu2 a {
     color: rgb(37, 37, 37);
     position: fixed;
@@ -28,6 +45,7 @@ body {
     top: 20px;
     display: flex;
     margin: auto;
+    transition: transform 1s ease;
 }
 
 h1 {
@@ -123,5 +141,19 @@ h1 {
     background-color: rgb(211, 20, 20);
     box-shadow: 0 0 15px rgb(255, 115, 115);
     transform: scale(1.05);
+}
 
+.rotacionar {
+    transform: rotate(360deg);
+}
+
+#mensagem {
+    position: relative;
+    top: 18px;
+    color: rgb(218, 43, 43);
+    font-size: 12px;
+}
+
+.hidden {
+    opacity: 0;
 }

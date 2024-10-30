@@ -8,6 +8,23 @@ body {
     src: url(Sora-VariableFont_wght.ttf);
 }
 
+@keyframes tremer {
+    
+   
+    0%, 100% { transform: translateX(0); }
+        
+       
+    25% { transform: translateX(-5px); }
+        
+       
+    50% { transform: translateX(5px); }
+        75% { transform: translateX(-5px); }
+    }
+
+.tremer {
+        animation: tremer 0.3s ease-in-out;
+}
+
 .menu2 a {
     color: beige;
     position: fixed;
@@ -30,6 +47,7 @@ body {
     bottom: 40px;
     border-radius: 50%;
     box-shadow: 0 0 15px rgb(255, 255, 255);
+    transition: transform 1s ease;
 }
 
 .logo:hover {
@@ -92,4 +110,16 @@ input:hover {
     background-color: rgb(255, 138, 138);
     color: rgb(228, 228, 228);
     box-shadow: 0 0 15px rgb(255, 113, 113);
+}
+
+#mensagem {
+    position: relative;
+    top: 6px;
+    color: rgb(255, 151, 151);
+    font-size: 12px;
+}
+
+.rotacionar {
+    transform: rotate(360deg);
+    width: 95px;
 }

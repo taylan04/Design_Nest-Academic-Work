@@ -21,19 +21,20 @@
             <h1>Agora vamos fazer de você um<br> membro da <strong>Nest.</strong></h1>
           </section>
           <section id="nomeSobrenome">
-            <input type="text" id="nome" value="Nome *" onfocus="limpar()" onblur="restaurar()">
-            <input type="text" id="sobrenome" value="Sobrenome *" onfocus="limpar2()" onblur="restaurar2()">
+            <input type="text" id="nome" value="Nome *" onfocus="limpar(nome)" onblur="restaurar(nome, 'Nome *')">
+            <input type="text" id="sobrenome" value="Sobrenome *" onfocus="limpar(sobrenome)" onblur="restaurar(sobrenome, 'Sobrenome *')">
           </section>
           <section id="usuarioSenha">
-            <input type="email" id="email" value="Email *" onfocus="limpar5()" onblur="restaurar5()">
-            <input type="text" id="usuario" value="Usuário *" onfocus="limpar4()" onblur="restaurar4()">
-            <input type="password" id="senha" value="Crie uma senha *" onfocus="limpar3()" onblur="restaurar3()">
+            <input type="email" id="email" value="Email *" onfocus="limpar(email)" onblur="restaurar(email, 'Email *')">
+            <input type="text" id="usuario" value="Usuário *" onfocus="limpar(usuario)" onblur="restaurar(usuario, 'Usuário *')">
+            <input type="password" id="senha" value="Crie uma senha *" onfocus="limpar(senha)" onblur="restaurar(senha, 'Senha *')">
             <p id="exigenciasSenha">X A senha deve ter pelo menos 8 caracteres.<br>
                    X Deve conter pelo menos uma letra maiúscula (A-Z).<br>
                    X Deve conter ao menos um caractere especial, como:<br> @, #, $, %, &, *, !, ?, etc.</p>
           </section>      
           <section id="registrar">
           <input type="button" id="registrar2" value="Criar uma conta" onclick="registrando()">
+          <div id="mensagem"></div>
           </section>
         </main>
 

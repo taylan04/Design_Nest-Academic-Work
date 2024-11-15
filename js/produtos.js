@@ -42,5 +42,10 @@ if(logado && admin) {
     cadastrarProduto.style.display = "none"
 }
 
+const botaoComprar = document.getElementById("redirecionar")
+
+if(!logado) {
+    botaoComprar.setAttribute("href", "../other_pages/login.html") 
+}
 
 

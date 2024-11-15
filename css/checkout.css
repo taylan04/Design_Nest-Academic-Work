@@ -84,3 +84,7 @@ main .valor {
     box-shadow: 0 0 15px rgb(105, 101, 101);
     transition: 0.3s;
 }
+
+#nomeDoUsuario {
+    display: flex;
+}

@@ -1,0 +1,57 @@
+body {
+    font-family: sora;
+}
+
+@font-face {
+    font-family: sora;
+    src: url(Sora-VariableFont_wght.ttf);
+}
+
+#logo {
+    position: relative;
+    top: 50px;
+    display: flex;
+    margin: auto;
+}
+
+h1 {
+    position: relative;
+    top: 70px;
+    text-align: center;
+}
+
+p {
+    position: relative;
+    top: 100px;
+    font-weight: 200;
+    margin-left: 400px;
+    margin-right: 400px;
+    text-align: center;
+}
+
+h2 {
+    position: relative;
+    top: 135px;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    position: relative;
+    top: 160px;
+    margin: auto;
+}
+
+th {
+    font-weight: 500;
+    color: beige;
+    padding: 20px;
+    background-color: rgb(154, 23, 23);
+}
+
+td {
+    background-color: rgb(244, 244, 244);
+    text-align: center;
+    font-weight: 200;
+    padding: 15px;
+}

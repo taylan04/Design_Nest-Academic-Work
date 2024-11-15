@@ -4,15 +4,6 @@ let senha = document.getElementById("senha")
 let mensagem = document.getElementById("mensagem")
 let logo = document.querySelector(".logo")
 
-function limpar(campo) {
-    campo.value = ""
-}
-
-function restaurar(campo, padrao) {
-    if (campo.value === "") {
-        campo.value = padrao
-    }
-}
 
 function animacao(campo) {
     campo.classList.remove("tremer")
@@ -31,45 +22,46 @@ function logando() {
 
     let validador = true
 
-    if (nome.value === "Usuário" || nome.value === "") {
+    if (nome.value === "") {
         validador = false
         animacao(nome)
     } 
 
-    if(email.value === "Email" || email.value === "") {
+    if(email.value === "") {
         validador = false
         animacao(email)
     }
 
-    if(senha.value === "Senha" || senha.value === "") {
+    if(senha.value === "") {
         validador = false
         animacao(senha)
     }
 
     if(validador) {
        
-        const storageNome = localStorage.getItem("usuario");
-        const storageEmail = localStorage.getItem("email");
-        const storageSenha = localStorage.getItem("senha");
+        const dadosUsuarioSalvos = JSON.parse(localStorage.getItem("dadosUsuario"))
 
         if(nome.value === "admin" && email.value === "admin2024@gmail.com" && senha.value === "Admin@2024") {
             localStorage.setItem("user", "admin")
             localStorage.setItem("logado", "true")
-        } else {
+            alert("Login de administrador efetuado com sucesso.");
+             window.location.href = "../index.html"
+            girarLogo();
+            return
+        } 
+
+        if( dadosUsuarioSalvos && nome.value === dadosUsuarioSalvos.usuario && email.value === dadosUsuarioSalvos.email && senha.value === dadosUsuarioSalvos.senha) {
             localStorage.setItem("user", "user");
             localStorage.setItem("logado", "true");
-        }
-
-        if(nome.value === storageNome && email.value === storageEmail && senha.value === storageSenha ) {
             alert("Login efetuado com sucesso.")
             girarLogo()
-            window.location.href = "../other_pages/index2.html"
+            window.location.href = "../index.html"
         } else {
             girarLogo()
             animacao(nome)
             animacao(email)
             animacao(senha)
-           mensagem.innerText = "Dados de login não existentes ou incorretos, para logar é preciso primeiro ter um cadastro, clique na opção abaixo."
+           mensagem.innerText = "Dados de login inexistentes ou incorretos. OBS: Para logar é preciso primeiro ter um cadastro, clique na opção abaixo."
         }
     }
 }

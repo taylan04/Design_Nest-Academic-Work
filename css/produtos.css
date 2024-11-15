@@ -132,7 +132,7 @@ h1 {
     transition: opacity 0.5s ease;
 }
 
-p {
+.menu2 p {
     font-family: mograch;
     color: beige;
     letter-spacing: 3px;
@@ -144,4 +144,51 @@ p {
 
 .hidden {
     opacity: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#cards {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#card {
+    position: relative;
+    top: 300px;
+    background-color: whitesmoke;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 0 10px red;
+    width: 500px;
+    height: 220px;
+}
+
+#card img {
+    box-shadow: 0 0 10px black;
+    position: relative;
+    margin-left: 0;
+    width: 220px;
+}
+
+#card h2 {
+    position: relative;
+    bottom: 210px;
+    left: 250px;
+    display: block;
+    color: rgb(40, 40, 40);
+    font-size: 18px;
+}
+
+#card p {
+    position: relative;
+    bottom: 210px;
+    left: 250px;
+    display: block;
+    color: rgb(40, 40, 40);
+    font-size: 14px;
+    
 }

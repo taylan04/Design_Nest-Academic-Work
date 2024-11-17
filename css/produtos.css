@@ -1,7 +1,8 @@
 body {
-    background-image: linear-gradient(to bottom, rgb(23, 23, 23), rgb(209, 0, 0));
+    background-color: whitesmoke;
     font-family: sora;
     height: 2000px;
+    background-image: url(../imagens/fundo.jpg);
 }
 
 @font-face {
@@ -15,7 +16,7 @@ body {
 }
 
 .menu2 a {
-    color: beige;
+    color: rgb(29, 29, 29);
     position: fixed;
     top: 70px;
     left: 50px;
@@ -31,7 +32,7 @@ body {
 }
 
 .descer {
-    color: beige;
+    color: rgb(32, 32, 32);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,20 +40,6 @@ body {
     top: 160px;
 } 
 
-#lista {
-    font-family: sora;
-    font-weight: 600;
-    color: beige;
-    display: flex;
-    margin: auto;
-    width: 400px;
-    padding: 40px;
-    border: 1px solid beige;
-    border-radius: 40px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.681);
-    background-color: none;
-    box-shadow: 0 0 15px red;
-}
 
 .logo {
     display: flex;
@@ -68,62 +55,88 @@ body {
     transition: 0.3s;
 }
 
-.menu2 #cadastrar {
-     text-decoration: none;
-     position: fixed;
-     top: 78px;
-     left: 1180px;
-     font-weight: 600;
-     transition: 0.3s;
+#cadastrar {
+    text-decoration: none;
+    color: rgb(25, 25, 25);
+    position: absolute;
+    top: 90px;
+    right: 180px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+#cadastrar:hover {
+    color: rgb(213, 25, 25);
+    transform: scale(1.05);
 }
 
 .menu2 #adquira2 {
     top: 120px;
 }
 
-#lista {
-    list-style-type: none;
+.card {
+    font-weight: 600;
+    color: rgb(27, 27, 27);
     display: flex;
+    width: 250px;
+    height: 380px;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: rgb(242, 242, 242);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.188);
     flex-direction: column;
-    gap: 10px;
     align-items: center;
     position: relative;
-    top: 200px;
+    top: 300px;
+    overflow: hidden;
 }
 
-select {
-    font-family: sora;
-    border: 1px solid black;
-    padding: 5px;
-    border-radius: 40px;
+.card img {
+    position: relative;
+    top: -20px;
+    display: block;
+    mask-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
+}
+
+.card p {
+    margin-top: 8px;
+    font-size: 11px;
+    font-weight: 300;
     text-align: center;
 }
 
-select option {
-    font-weight: 500;
-    color: beige;
-    background-color: rgb(140, 0, 0); /* Cor de fundo ao passar o mouse */
+.card h4 {
+    margin: 5px;
 }
 
-#lista input {
-    font-family: sora;
+.card h3 {
+    margin: 10px;
+    color: rgb(218, 34, 34);
+}
+
+.card input {
+    margin: 8px;
     font-weight: 700;
     padding: 10px;
     border: none;
     border-radius: 40px;
-    background-color: red;
+    background-color: rgb(214, 12, 12);
     color: beige;
 }
 
-#lista input:hover {
+.card input:hover {
     background-color: rgb(20, 20, 20);
     transition: 0.5s;
     cursor: pointer;
 }
 
+.card:hover {
+    border: 2px solid red;
+}
+
 h1 {
     font-family: mograch;
-    color: beige;
+    color: rgb(28, 28, 28);
     letter-spacing: 3px;
     position: fixed;  
     top: 10px;
@@ -134,7 +147,7 @@ h1 {
 
 .menu2 p {
     font-family: mograch;
-    color: beige;
+    color: rgb(32, 32, 32);
     letter-spacing: 3px;
     position: fixed;  
     top: 105px;
@@ -154,41 +167,13 @@ main {
 #cards {
     margin-left: 100px;
     margin-right: 100px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
-#card {
-    position: relative;
-    top: 300px;
-    background-color: whitesmoke;
-    border-radius: 40px;
-    overflow: hidden;
-    box-shadow: 0 0 10px red;
-    width: 500px;
-    height: 220px;
-}
 
-#card img {
-    box-shadow: 0 0 10px black;
-    position: relative;
-    margin-left: 0;
-    width: 220px;
-}
 
-#card h2 {
-    position: relative;
-    bottom: 210px;
-    left: 250px;
-    display: block;
-    color: rgb(40, 40, 40);
-    font-size: 18px;
-}
 
-#card p {
-    position: relative;
-    bottom: 210px;
-    left: 250px;
-    display: block;
-    color: rgb(40, 40, 40);
-    font-size: 14px;
-    
-}
+
+

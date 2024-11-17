@@ -1,7 +1,13 @@
 body {
     margin: 0;
-    font-family: Proxima Nova,-apple-system,Roboto,Arial,sans-serif;
-    background-color: whitesmoke;
+    font-family: sora;
+    background-image: url(../imagens/fundo.jpg);
+    height: 800px;
+}
+
+@font-face {
+    font-family: sora;
+    src: url(Sora-VariableFont_wght.ttf);
 }
 
 #painel {
@@ -10,35 +16,34 @@ body {
     display: flex;
 }
 
-#painel img {
-    width: 60px;
+#informacoes img {
     position: relative;
+    top: 60px;
+    width: 60px;
+    display: flex;
     margin: auto;
 }
 
 h1 {
     color: whitesmoke;
     position: relative;
+    top: 5px;
     left: 20px;
+    font-size: 23px
 }
 
 main h2 {
     text-align: center;
-    font-size: 17px;
+    font-size: 15px;
     position: relative;
     top: 80px;
-}
-
-.confirm {
-    top: 120px;
-    right: 55px;
 }
 
 .separator {
     background-color: rgba(0, 0, 0, 0.199);
     height: 1px;
     margin: auto;
-    width: 300px;
+    width: 330px;
     position: relative;
     top: 80px;
 }
@@ -56,19 +61,12 @@ main .valor {
     right: 93px;
 }
 
-#senha {
-    position: relative;
-    top: 120px;
-    left: 620px;
-    padding: 10px;
-    border-radius: 40px;
-    border: 1px solid black;
-}
 
 #comprar {
+    display: flex;
+    margin: auto;
     position: relative;
-    top: 120px;
-    left: 620px;
+    top: 210px;
     background-image: linear-gradient(to right, rgb(231, 22, 22), rgb(124, 0, 0) );
     padding: 14px;
     border-radius: 40px;
@@ -88,3 +86,79 @@ main .valor {
 #nomeDoUsuario {
     display: flex;
 }
+
+#nome {
+    position: relative;
+    left: 190px;
+    font-weight: 600;
+    color: rgb(177, 21, 21);
+}
+
+#valor {
+    position: relative;
+    left: 158px;
+    font-weight: 600;
+    color: rgb(177, 21, 21);
+}
+
+#aceitar {
+    display: flex;
+    margin: 0;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 120px;
+    gap: 7px;
+    font-size: 13px;
+}
+
+#informacoes p {
+    text-align: center;
+    position: relative;
+    top: 150px;
+    font-size: 12px;
+    color: rgb(177, 21, 21);
+}
+
+#cartao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 180px;
+    flex-direction: column;
+    gap: 7px;
+}
+
+#cartao input {
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.252);
+    border: none;
+    border-radius: 20px;
+    width: 220px;
+    padding: 10px;
+}
+
+#sucesso {
+    display: none;
+}
+
+#sucesso img {
+    position: relative;
+    top: 250px;
+    display: flex ;
+    margin: auto;
+    width: 100px;
+}
+
+#sucesso p {
+    text-align: center;
+    position: relative;
+    top: 270px;
+    font-size: 13px;
+    color: greenyellow;
+}
+

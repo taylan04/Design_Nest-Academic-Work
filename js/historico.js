@@ -1,6 +1,8 @@
 let pessoas = JSON.parse(localStorage.getItem("listaUsuarios"))
+let produtoss = JSON.parse(localStorage.getItem("listaDeProdutos"))
 
 const corpoDaTabela = document.querySelector("#pessoas tbody")
+const segundaTabela = document.querySelector("#produto tbody")
 
     pessoas.forEach(p => {
         
@@ -29,4 +31,20 @@ const corpoDaTabela = document.querySelector("#pessoas tbody")
         corpoDaTabela.appendChild(tr)
     
     });
+
+    produtoss.forEach(x => {
+
+        const tr2 = document.createElement("tr")
+        
+        const tdProduto = document.createElement("td")
+        tdProduto.textContent = x.nome
+        tr2.appendChild(tdProduto)
+
+        const tdValor = document.createElement("td")
+        tdValor.textContent = x.valor
+        tr2.appendChild(tdValor)
+
+        segundaTabela.appendChild(tr2)
+
+    })
 

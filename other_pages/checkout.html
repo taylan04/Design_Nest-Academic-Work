@@ -11,20 +11,30 @@
     <header>
         <div id="painel">
             <h1 id="nomeAqui">Olá, </h1>
-            <img src="../imagens/logo-projeto-de-bloco.png">
         </div>
     </header>
     <main>
         <section id="informacoes">
+        <img src="../imagens/logo-red.ico">
         <h2>Resumo da compra</h2>
         <div class="separator"></div>
-        <h2 class="produto">Produto</h2>
+        <h2 class="produto">Produto <span id="nome">Nome</span></h2>
         <div class="separator"></div>
-        <h2 class="valor">Você pagará</h2>
-        <h2 class="confirm">Confirme sua senha</h2>
-        <input type="password" id="senha" value="">
-        <input type="button" id="comprar" value="Confirmar compra">
-    </section>
+        <h2 class="valor">Você pagará <span id="valor">Valor</span></h2>
+        <label ><input id="aceitar" type="checkbox" value="sim">Estou de acordo com as informações acima.</label>
+        <p>OBS: No momento só aceitamos cartão de débito.</p>
+        <section id="cartao">
+        <input class="dadosCartao" type="text" placeholder="Nome impresso no cartão">
+        <input class="dadosCartao" type="text" maxlength="16" placeholder="Número do cartão">
+        <input class="dadosCartao" type="text" maxlength="5" placeholder="MM/AA" oninput="formatDate(event)">
+        <input class="dadosCartao" type="text" maxlength="3" placeholder="CVC">
+        </section>
+        <input type="button" id="comprar" value="Confirmar compra" onclick="comprar()">
+        </section>
+        <section id="sucesso">
+        <img src="../imagens/logo-verde.png">
+        <p>Compra efetuada com sucesso, confira todos os detalhes no seu email.</p>
+        </section>
     </main>
     <script src="../js/checkout.js"></script>
 </body>

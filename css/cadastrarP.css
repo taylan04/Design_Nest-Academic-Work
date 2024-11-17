@@ -1,0 +1,54 @@
+body {
+    font-family: sora;
+}
+
+@font-face {
+    font-family: sora;
+    src: url(Sora-VariableFont_wght.ttf);
+}
+
+header img {
+    display: flex;
+    margin: auto;
+    position: relative;
+    top: 50px;
+}
+
+header h1 {
+    position: relative;
+    top: 50px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+}
+
+main input {
+    text-align: center;
+    width: 300px;
+    padding: 10px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.222);
+    border-radius: 15px;
+    margin: 7px;
+    transition: 0.3s;
+}
+
+main input:hover {
+    background-color: rgb(224, 224, 224);
+}
+
+#cadastrar {
+    background-color: rgb(181, 41, 41);
+    color: beige;
+}
+
+#cadastrar:hover {
+     background-color: rgb(30, 30, 30);
+}

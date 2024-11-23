@@ -39,7 +39,9 @@ function logando() {
 
     if(validador) {
        
-        const dadosUsuarioSalvos = JSON.parse(localStorage.getItem("dadosUsuario"))
+        const dadosUsuarioSalvos = JSON.parse(localStorage.getItem("listaUsuarios"))
+
+        const dadosEncontrados = dadosUsuarioSalvos.find((u) => u.usuario === nome.value && u.email === email.value && u.senha === senha.value)
 
         if(nome.value === "admin" && email.value === "admin2024@gmail.com" && senha.value === "Admin@2024") {
             localStorage.setItem("user", "admin")
@@ -50,7 +52,7 @@ function logando() {
             return
         } 
 
-        if( dadosUsuarioSalvos && nome.value === dadosUsuarioSalvos.usuario && email.value === dadosUsuarioSalvos.email && senha.value === dadosUsuarioSalvos.senha) {
+        if( dadosEncontrados) {
             localStorage.setItem("user", "user");
             localStorage.setItem("logado", "true");
             alert("Login efetuado com sucesso.")

@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(24, 24, 24);
+    background-image: url(../imagens/fundo-preto.jpg);
     height: 2000px;
 }
 
@@ -71,7 +71,7 @@ main {
 #eu h2 {
     font-family: mograch;
     letter-spacing: 3px;
-    color: rgb(166, 31, 31);
+    color: rgb(240, 19, 19);
     font-size: 54px;
     margin-bottom: 10px;
 }
@@ -98,7 +98,7 @@ main {
 #projeto h2 {
     font-family: mograch;
     letter-spacing: 4px;
-    color: rgb(166, 31, 31);
+    color: rgb(240, 19, 19);
     font-size: 54px;
 }
 
@@ -108,4 +108,10 @@ main {
     color: beige;
     font-size: 13px;
     text-shadow: 0 0 2px beige;
+}
+
+video {
+    border-radius: 20px;
+    width: 500px;
+    box-shadow: 0 0 10px black;
 }

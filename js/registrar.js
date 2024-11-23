@@ -6,8 +6,6 @@ let email = document.getElementById("email")
 let mensagem = document.getElementById("mensagem")
 let logo = document.querySelector(".logo")
 
-
-
 function animacao(campo) {
     campo.classList.remove("tremer")
 
@@ -19,14 +17,6 @@ function girarLogo() {
     logo.classList.remove("rotacionar"); 
     void logo.offsetWidth; 
     logo.classList.add("rotacionar");
-}
-
-let usuarios = {
-    nome: "x",
-    sobrenome: "x",
-    usuario: "x", 
-    email: "x", 
-    senha: "x"
 }
 
 class Pessoas {
@@ -112,7 +102,9 @@ function registrando() {
         localStorage.setItem("listaUsuarios", JSON.stringify(listaDeUsuarios))
         girarLogo()
         console.log("ok")
-        window.location.href = "../other_pages/login.html"
+        setTimeout(() => {
+            window.location.href = "../other_pages/login.html";
+        }, 2000)
     }} else {
     girarLogo()
        mensagem.innerText = "Preencha todos os dados corretamente!"

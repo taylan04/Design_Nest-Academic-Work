@@ -20,9 +20,6 @@ function cadastrar() {
     if (!imagem.value || !nome.value || !descricao.value || !valor.value) {
         alert("Por favor, preencha todos os campos antes de cadastrar.");
         return;
-        } else if (caracteres > 120) {
-           alert("Sua descrição precisa ter até 121 caracteres.")
-           return;
         }
 
     let novoProduto = new Produtos (

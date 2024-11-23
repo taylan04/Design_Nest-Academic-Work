@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(to left, rgb(23, 23, 23), rgb(209, 0, 0));
+    background-image: url(../imagens/fundo-preto.jpg);
     font-family: sora;
 }
 
@@ -38,7 +38,7 @@ body {
 }
 
 .menu2 i:hover {
-    color: rgb(25, 25, 25);
+    color: rgb(171, 12, 12);
 }
 
 .logo {

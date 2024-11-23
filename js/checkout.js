@@ -1,17 +1,13 @@
-
 let nomeDoUsuario = document.getElementById("nomeAqui");
+const h1 = document.querySelector("h1")
 
-let dadosUsuario = JSON.parse(localStorage.getItem("dadosUsuario"));
+const usuarioLogado = localStorage.getItem("user");
+const admin = usuarioLogado === "admin";
 
-const logado = localStorage.getItem("logado") === "true"
-const user = localStorage.getItem("user") === "admin"
-
-if (dadosUsuario && logado) {
-    nomeDoUsuario.textContent = `Olá, ${dadosUsuario.nomeDoUsuario}`;
-}  
-
-if (user) {
-    nomeDoUsuario.textContent = `Olá, Administrador`;
+if (admin) {
+    nomeDoUsuario.textContent = "Olá, Administrador";
+} else {
+    h1.style.display = "none"
 }
 
  function formatDate(event) {
@@ -46,6 +42,7 @@ if (user) {
 
         if (campoVazio) {
         alert("Preencha todos os dados do cartão.");
+        return
         } else {
         console.log("Compra confirmada!");
     }
@@ -60,6 +57,7 @@ if (user) {
     } else {
         alert("Confirme se está de acordo com as informações.")
         validador = false
+        return
     }
 
     if(validador) {

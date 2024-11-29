@@ -7,7 +7,7 @@ body {
 
 @font-face {
     font-family: sora;
-    src: url(Sora-VariableFont_wght.ttf);
+    src: url(../fontes/Sora-VariableFont_wght.ttf);
 }
 
 #painel {
@@ -39,6 +39,30 @@ main h2 {
     top: 80px;
 }
 
+.nomeGrande {
+    font-weight: 600;
+    color: rgb(177, 21, 21);
+    position: absolute;
+    left: 890px;
+    bottom:0px;
+}
+
+.nome {
+    font-weight: 600;
+    color: rgb(177, 21, 21);
+    position: absolute;
+    left: 950px;
+    bottom:0px;
+}
+
+#valor {
+    position: absolute;
+    left: 920px;
+    bottom:0px;
+    font-weight: 600;
+    color: rgb(177, 21, 21);
+}
+
 .separator {
     background-color: rgba(0, 0, 0, 0.199);
     height: 1px;
@@ -54,13 +78,11 @@ main .produto {
     right: 110px;
 }
 
-
 main .valor {
     font-weight: 200;
     position: relative;
     right: 93px;
 }
-
 
 #comprar {
     display: flex;
@@ -87,19 +109,6 @@ main .valor {
     display: flex;
 }
 
-#nome {
-    position: relative;
-    left: 190px;
-    font-weight: 600;
-    color: rgb(177, 21, 21);
-}
-
-#valor {
-    position: relative;
-    left: 158px;
-    font-weight: 600;
-    color: rgb(177, 21, 21);
-}
 
 #aceitar {
     display: flex;
@@ -161,4 +170,3 @@ label {
     font-size: 13px;
     color: greenyellow;
 }
-

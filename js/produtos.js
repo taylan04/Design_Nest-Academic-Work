@@ -51,11 +51,13 @@ if(!logado) {
 const produtos = JSON.parse(localStorage.getItem("listaDeProdutos"))
 
 const modelo = document.querySelector(".card")
+modelo.classList.add("produtoBase")
 const container = document.getElementById("cards")
 
 produtos.forEach(produto => {
 
     let novoCard = modelo.cloneNode(true)
+    novoCard.classList.add("produtoAdicionado")
 
     let imagem = novoCard.querySelector('img');
     let titulo = novoCard.querySelector('h4');
@@ -84,4 +86,6 @@ const botoes = document.querySelectorAll(".checkout")
         localStorage.setItem("produtoSelecionado", JSON.stringify(produtoSelecionado));
     })
    })
+
+
 

@@ -73,3 +73,11 @@ if (produto) {
     document.getElementById("nome").textContent = produto.nome;
     document.getElementById("valor").textContent = produto.valor;
 }
+
+let nomeDoProduto = document.getElementById("nome")
+
+if(nomeDoProduto.textContent.length > 15) {
+    nomeDoProduto.classList.add("nomeGrande")
+} else {
+    nomeDoProduto.classList.add("nome")
+}
